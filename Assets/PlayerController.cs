@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
         if (actions.Player.Jump.WasPerformedThisFrame()) // Nastala bìhem tohoto snímku akce Jump 
         {
             body.AddForceY(jumpForce);  // Použij sílu smìrem nahoru
+            Debug.Log("Jump");
         }
     }
 }
